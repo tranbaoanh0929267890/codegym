@@ -1,0 +1,12 @@
+B1 Tạo bảng:
+    theo dạng <tr>
+                <td></td>
+                <td></td>
+              </tr>
+    duyệt cột dòng. Số cột & dòng do nguoi dùng nhập.
+
+B2 Bắt toạ độ
+
+B3: Điền X hoặc O
+
+B4: Check Win
