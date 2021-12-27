@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Draw Paddle</title>
+    <style>
+      * {
+        padding: 0px;
+        margin: 10px;
+      }
+      .container {
+        background-color: #060606db;
+        margin-left: 10%;
+        margin-top: 5%;
+        height: 80%;
+        width: 80%;
+        border: 1px solid #bc1ac5;
+        color: #00bcd4;
+        font-size: 30px;
+        border-radius: 30px;
+        box-shadow: 0px 0px 50px #101010;
+        padding: 15px;
+      }
+      canvas {
+        background: #eee;
+        display: block;
+        width: 50%;
+        height: 40%;
+        border: 2px solid red;
+        margin: 0 auto;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <canvas width="400px" height="400px" id="myCanvas"></canvas>
+    </div>
+    <script>
+      // let canvas = document.getElementById("myCanvas");
+      // let ctx = canvas.getContext("2d");
+
+      // let bar = new Bar(120, 50);
+      // document.addEventListener("keydown", function (event) {
+      //   let keydown = event.keyCode;
+      //   console.log(keydown);
+      //   if (keydown == 68 || keydown == 39) {
+      //     bar.moveRight();
+      //   }
+      //   if (keydown == 65 || keydown == 37) {
+      //     bar.moveLeft();
+      //   }
+      // });
+      // setInterval(draw, 0);
+    </script>
+    <script src="game-board.js"></script>
+    <script src="ball.js"></script>
+    <script src="bar.js"></script>
+  </body>
+  <script>
+    let board = new GameBoard("myCanvas", 400, 400);
+    let bar = new Bar(board, 120, 50);
+    let ball = new Ball(board, bar);
+    function draw() {
+      board.ctx.clearRect(0, 0, board.canvas.width, board.canvas.height);
+      bar.drawBar();
+      ball.drawBall();
+      // if(checkCollision(ball,bar)){
+      //   ball.speedY = -ball.speedY;
+    
+      // } 
+      ball.move();
+    }
+    
+    document.addEventListener("keydown", function (event) {
+      let keydown = event.keyCode;
+      console.log(keydown);
+      if (keydown == 68 || keydown == 39) {
+        bar.moveRight();
+      }
+      if (keydown == 65 || keydown == 37) {
+        bar.moveLeft();
+      }
+    });
+    setInterval(draw, 24);
+  </script>
+</html>
