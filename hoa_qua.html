@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- <input id="name" type="text" name="gia" value="" /><button id="ketqua" type="submit">Tính</button
+    ><br /><br />
+    <p>Kết quả</p>
+    <input id="kq" type="text" name="ketqua" />
+    <script>
+      document.getElementById("ketqua").addEventListener("click", function () {
+        let name  = document.getElementById("name").value;
+        let kq = document.getElementById("kq");
+        switch (name) {
+          case "oi":
+             kq.value = 20000;
+            break;
+          case "dua hau":
+          kq.innerHTML = 20000;
+            break;
+          case "tao":
+          kq.innerHTML = 20000;
+            break;
+          case "xoai":
+          kq.innerHTML = 20000;
+            break;
+          case "cam":
+          kq.innerHTML = 20000;
+            break;
+          case "chom":
+          kq.innerHTML = 20000;
+            break;
+          case "mang cut":
+          kq.innerHTML = 20000;
+            break;
+          default:
+          kq.innerHTML = 20000;
+        }
+      });
+    </script> -->
+
+    <p>Khu vực</p>
+    <select name="select" id="select">
+        <option value="KV1dasdas">KV1</option>
+        <option value="KV2dasdas">KV2</option>
+        <option value="KV2-NTdsadas">KV2-NT</option>
+        <option value="KV3dsadas">KV3</option>
+    </select>
+    <script>
+        let select = document.getElementById("select");
+        
+        select.addEventListener("change",function(){
+            console.log(select.value);
+        });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      td {
+        width: 40px;
+        height: 40px;
+        text-align: center;
+        font-size: 30px;
+      }
+    </style>
+    <script src="board.js"></script>
+    <script src="checker.js"></script>
+  </head>
+  <body>
+    <table id="board" border="1px" cellspacing="0px"></table>
+    <script>
+      const ROW = 10;
+      const COL = 10;
+      const PLAYER_X = "X";
+      const PLAYER_O = "O";
+      const EMPTY_VALUE = "";
+      let turn = PLAYER_X;
+
+      let board = new Board(ROW,COL);
+      board.createBoard();
+      function clickCell(i, j) {
+        let check = new Checker(i, j);
+        console.log(i + "-" + j);
+        let id = "cell-" + i + "-" + j;
+        let cell = document.getElementById(id);
+        if (cell.innerHTML == EMPTY_VALUE) {
+          if (turn == PLAYER_X) {
+            cell.innerHTML = PLAYER_X;
+            check.checkWin();
+            turn = PLAYER_O;
+          } else {
+            cell.innerHTML = PLAYER_O;
+            check.checkWin();
+            turn = PLAYER_X;
+          }
+        } else {
+          alert("Đánh chỗ khác đê");
+        }
+      }
+    </script>
+  </body>
+</html>

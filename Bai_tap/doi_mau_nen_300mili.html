@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <p>
+      Trong ví dụ này, phương thức setInterval() sẽ thực thi hàm setColor() để
+      chuyển đổi giữa hai màu nền cứ sau 300 mili giây một lần.
+    </p>
+    <script>
+        setInterval(setColor,300);
+        function setColor() {
+            let x = document.body;
+            x.style.backgroundColor = (x.style.backgroundColor == "yellow" ? "pink":"yellow"); 
+        }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,29 @@
+<!-- Viet 1 chuong trinh chuyen doi tien te, input la so tien,ty gia, so tien quy doi. button quy doi -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Quy doi tien te</h1>
+    So tien can quy doi <input type="text" name="sotien" id="soTien""><br><br>
+    <span>Ty gia:</span>
+    <select name="tiente" id="dropdown">
+        <option value="USDhgfhfg">USD</option>
+        <option value="EURhfghfgh">EUR</option>
+        <option value="BATHhfghfg">BATH</option>
+    </select><br><br>
+    <button type="submit" onclick="tinhtoan()">Quy doi</button><br><br>
+    <input type="text" id="kq">
+</body>
+<script>
+    function tinhtoan(){
+        let soTien = document.getElementById("soTien").value;
+        let select = document.getElementById("dropdown");
+        alert(select.options[select.selectedIndex].value);
+    }
+</script>
+</html>

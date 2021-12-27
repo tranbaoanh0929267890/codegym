@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculation</title>
+    <style>
+      * {
+        -webkit-user-select: none;
+      }
+      #battleField {
+       position: relative;
+        width: 190px;
+        height: 190px;
+        border: 1px solid black;
+      }
+      #tank {
+        position: absolute;
+        top: 19px;
+        left: 38px;
+        width: 19px;
+        height: 19px;
+        background-image: url(tank.png);
+        background-size: cover;
+      }
+      #boom {
+        position: absolute;
+        top: 76px;
+        left: 33px;
+        width: 19px;
+        height: 19px;
+        background-image: url(boom.png);
+        background-size: cover;
+      }
+    </style>
+  </head>
+  <body >
+    <div id="battleField">
+      <div id="tank"></div>
+      <div id="boom"></div>
+    </div>
+    <table>
+      <tr>
+        <td></td>
+        <td>
+          <button id="btnUp">⬆</button>
+        </td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>
+          <button id="btnLeft">⬅</button>
+        </td>
+        <td></td>
+        <td>
+          <button id="btnRight"">➡</button>
+        </td>
+      </tr>
+      <tr>
+        <td></td>
+        <td>
+          <button id="btnDown"">⬇</button>
+        </td>
+        <td></td>
+      </tr>
+    </table>
+    <script>
+      let tank = document.getElementById("tank");
+      let boom = document.getElementById("boom");
+      let btnUp = document.getElementById("btnUp");
+      let btnDown = document.getElementById("btnDown");
+      let btnLeft = document.getElementById("btnLeft");
+      let btnRight = document.getElementById("btnRight");
+      let left = parseInt(tank.style.left);
+      btnRight.addEventListener("keydown",function(obj){
+          let key = obj.key;
+          if(key == "ArrowRight"){
+            left += 19;
+            tank.style.left = left + "px";
+            console.log(window.getComputedStyle(tank).left);
+          } 
+      });
+
+
+    </script>
+  </body>
+</html>

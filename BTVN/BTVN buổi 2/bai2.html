@@ -1,0 +1,28 @@
+<!-- Bài 2. Linh là người đam mê thể thao, mùa worldcup vừa rồi, 
+Linh có lỡ tất tay cho tuyển Pháp, 
+Linh đã phải nhờ đến bên hỗ trợ tài chính số tiền 100 triệu với 
+mức lãi suất 3% 1 ngày, viết chương trình tính số tiền Linh phải trả sau 60 ngày, 
+biết rằng Linh vay theo hình thức lãi mẹ đẻ lãi con. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let tienVay = 100_000_000;
+        const laiSuat = 1.03;
+        let day=1;
+        while(day<=60){
+            tienVay*=laiSuat;
+            day++;
+        }
+        document.write("So tien Linh phải trả sau 60 ngày:" + 
+        "  " + tienVay.toLocaleString() + " VND");
+    </script>
+</body>
+</html>

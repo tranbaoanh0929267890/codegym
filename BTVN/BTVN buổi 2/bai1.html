@@ -1,0 +1,28 @@
+<!-- Bài 1. Cho 2 số a và b, viết chương trình tìm ra ước chung lớp nhất (UCLN) 
+và bội chung nhỏ nhất (BCNN) của a và b -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let a = +prompt("a = ");
+      let b =  +prompt("b = ");
+      let ucln,bcnn=a*b;
+      {
+        while (a * b != 0) {
+          a > b ? (a %= b) : (b %= a);
+        }
+        ucln = a+b;
+        document.write(`UCLN = ${ucln}`);
+      }
+      document.write("<br>");
+      document.write(`BCNN = ${bcnn/=ucln}`);
+    </script>
+  </body>
+</html>

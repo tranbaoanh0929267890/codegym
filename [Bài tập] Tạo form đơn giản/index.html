@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      body {
+        
+      }
+      label {
+        display: inline-block;
+        text-align: right;
+        width: 210px;
+      }
+      input, textarea{
+        border-left-width: 2pt;
+        border-top-width: 2pt;
+      
+      }
+      input[type="checkbox"] {
+        -webkit-box-shadow: 1pt 1pt rgba(0, 0, 0, 0.533);
+        -moz-box-shadow: 1pt 1pt rgba(0, 0, 0, 0.533);
+        box-shadow: 1pt 1pt rgba(0, 0, 0, 0.533);
+      }
+    </style>
+    <title>Document</title>
+  </head>
+  <body>
+    <form action="#" name="So thich">
+      <table>
+        <p
+          style="
+            text-align: center;
+            background-color: red;
+            color: white;
+            padding: 5px;
+          "
+        >
+          <b>SỞ THÍCH CỦA BẠN</b>
+        </p>
+        <tr>
+          <td><label>Họ và tên</label></td>
+          <td>
+            <input type="text" name="name" size="30px" />
+          </td>
+        </tr>
+        <tr>
+          <td><label>Email</label></td>
+          <td>
+            <input type="text" name="email" />
+          </td>
+        </tr>
+      </table>
+      <table style="margin-left: 150px">
+        <tr>
+          <td>Sở thích</td>
+          <td><input type="checkbox" name="cb" />Thể thao</td>
+          <td><input type="checkbox" name="cb"/>Âm nhạc</td>
+          <td><input type="checkbox" name="cb"/>Đọc sách</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td><input type="checkbox" name="cb"/>Lướt web</td>
+          <td><input type="checkbox" name="cb"/>Chơi game</td>
+          <td><input type="checkbox" name="cb"/>Điện ảnh</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td><input type="checkbox" name="cb"/>Du lịch</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>
+            <input
+              type="submit" value="Gửi thông tin"
+            >
+            </input>
+          </td>
+          <td>
+            <input
+              type="reset" value="Nhập lại"
+            >
+            </input>
+          </td>
+        </tr>
+      </table>
+    </form>
+    <form action="#" name="Dang ky" style="background-color: rgb(253, 253, 181);"> 
+        <table style="padding: 10px;">
+            <p
+            style="
+              text-align: left;
+              background-color: rgb(191, 232, 191);
+              color: blue;
+              padding: 5px;
+            "
+          >
+            <b>ĐĂNG KÝ HỌC VIÊN</b>
+          </>
+          <tr>
+              <td>Họ và tên</td>
+              <td><input type="text" name="name" size="30px"></td>
+          </tr>
+          <tr>
+            <td>Ngày sinh</td>
+            <td><input type="text" name="birth" size="15px"></td>
+        </tr>
+        <tr>
+            <td>Giới tính</td>
+            <td><input type="radio" name="gender">Nam</td>
+            <td ><input type="radio" name="gender" style="margin-left: -150px;">Nữ</td>
+        </tr>
+        <tr>
+            <td style="vertical-align: 0px;">Địa chỉ</td>
+            <td><textarea name="address" id="" cols="20" rows="3"></textarea></td>
+        </tr>
+        <tr>
+            <td>Lớp</td>
+            <td><select name="class">
+                <option value="option">- Chọn lớp -</option>
+            </select>
+            </td>
+        </tr>
+        <tr>
+            <td>Email</td>
+            <td><input type="text" name="email"></td>
+        </tr>
+        <tr>
+            <td>Điện thoại</td>
+            <td><input type="text" name="phone"></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>
+              <input
+                type="submit" value="Đăng ký" 
+              >
+              </input>
+            </td>
+            <td>
+              <input
+                type="reset" value="Nhập lại" style="margin-left: -140px;"
+              >
+              </input>
+            </td>
+          </tr>
+        </table>
+    </form>
+  </body>
+</html>

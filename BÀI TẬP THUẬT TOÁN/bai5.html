@@ -1,0 +1,35 @@
+<!-- Bài 5**(Bài khó đấy):
+Viết chương trình nhập vào dãy số và sắp xếp dãy số theo thứ tự tăng dần. -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let n = +prompt();
+      let arr = [];
+      // Nhập
+      for (let i = 0; i < n; i++) {
+        arr.push(+prompt("Nhập số thứ " + (i+1)));
+      }
+      // Tính toán
+      let temp;
+      for(let i=0;i<n-1;i++){
+          for(let j=i+1;j<n;j++){
+              if(arr[i] > arr[j]){
+                temp   = arr[i];
+                arr[i] = arr[j];
+                arr[j] = temp;
+              }
+          }
+      }
+      // Xuất
+      document.write(arr);
+    </script>
+  </body>
+</html>

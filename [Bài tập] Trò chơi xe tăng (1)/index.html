@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #tank{
+            position: relative;
+            top: 0px;
+            left: 0px;
+            width: 19px;
+            height: 19px;
+        }
+        .battle{
+            border: 1px solid black;
+            height: 190px;
+            width: 190px;
+            background-color:black;
+
+        }
+    </style>
+</head>
+<body>
+
+    <div class="battle">
+        <img id="tank"  src="tank.png" alt="tank">
+    </div>
+    <script>
+        let tank = document.getElementById("tank");
+        tank.style["top"] = 19 + "px";
+        tank.style["left"] = 38 + "px";
+    </script>
+</body>
+</html>

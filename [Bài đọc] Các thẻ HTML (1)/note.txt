@@ -1,0 +1,14 @@
+#Thuộc tính type của danh sách xếp thứ tự
+
+Thuộc tính type của thẻ <ol>  dùng để định kiểu cho biểu tượng các phần tử:
+
+Type	
+Miêu tả
+ type="1"	
+ Các phần tử sẽ được đánh thứ tự bằng số (Mặc định)
+type="A"	
+ Các phần tử sẽ được đánh thứ tự bằng chữ cái hoa
+ type="a"	
+ Các phần tử sẽ được đánh thứ tự bằng chữ cái thường
+ type="I"	 Các phần tử sẽ được đánh thứ tự bằng chữ số La Mã hoa
+ type="i"	 Các phần tử sẽ được đánh thứ tự bằng chữ số La Mã thường

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h2>What Can Javascript Do?</h2>
+    <p id="demo">Javascript can change HTML content</p>
+    <button
+      onclick="document.getElementById('demo').innerHTML = 'Hello Javascript'"
+    >
+      Click me!</button
+    ><br />
+    --------------------------------------------
+    <h2>What Can Javascript Do?</h2>
+    <p>Javascript can change HTML attributes.</p>
+    <p>
+      In this case Javascript changes the src (source) attribute of an image
+    </p>
+    <button
+      onclick="document.getElementById('myImage').src='https://www.w3schools.com/js/pic_bulbon.gif'"
+    >
+      Turn on the light
+    </button>
+    <img
+      id="myImage"
+      src="https://www.w3schools.com/js/pic_bulboff.gif"
+      alt=""
+      style="width: 100px"
+    /><br />
+    ----------------------------------------------
+    <h2>What Can Javascript Do?</h2>
+    <p id="demo1">Javascript can change the style of an HTML element.</p>
+    <button
+      type="button"
+      onclick="document.getElementById('demo1').style.fontSize= '35px'"
+    >
+      Click me!</button
+    ><br />
+    ----------------------------------------------
+    <h2>What Can Javascript Do?</h2>
+    <p id="demo2">Javascript can hide HTML elements</p>
+    <button
+      type="button"
+      onclick="document.getElementById('demo2').style.display='none'"
+    >
+      Click me!
+    </button><br>
+    ----------------------------------------------
+    <h2>What Can Javascript Do?</h2>
+    <p>Javascript can show hidden HTML elements</p>
+    <p id="demo3" style="display: none;">Hello Javascript!</p>
+    <button type="button" onclick="document.getElementById('demo3').style.display = 'block'">Click me!</button>
+  </body>
+</html>

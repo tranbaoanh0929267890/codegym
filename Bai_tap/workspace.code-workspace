@@ -1,0 +1,28 @@
+{
+	"folders": [
+		{
+			"path": ".."
+		},
+		{
+			"path": "../../../../Desktop/HTML5 & CSS3/Lab/demo-caseStudy-master"
+		},
+		{
+			"path": "../../../../Desktop/HTML5 & CSS3/Lab/demo-tank-game-main"
+		},
+		{
+			"path": "../../../../Desktop/HTML5 & CSS3/Lab/demo-canvas-pf2110r1-main"
+		},
+		{
+			"path": "../../../../Downloads/TinhTienTip"
+		},
+		{
+			"path": "../../../../Downloads/todolist"
+		},
+		{
+			"path": "../../../../Downloads/snake-game-main"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "Ham_1"
+	}
+}
